@@ -1,3 +1,71 @@
 body {
+	margin: 0;
+	background: #222;
+	font-family: 'Monaco';
+	font-weight: 800;
+}
 
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+header {
+  background: #2db9b9;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 0.4% 0;
+}
+
+nav {
+  float: left;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 50px;
+  padding-top: 20px;
+
+  position: relative;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #444;
+}
+nav a::before {
+  content: '';
+  display: block;
+  height: 20%;
+  background-color: #0C6980;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
 }
